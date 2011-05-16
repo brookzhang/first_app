@@ -2,6 +2,9 @@ rails:
 rails new
 rails server    rails s
 rails generate scaffold User name:string email:string
+gem install rails
+gem install rails --version 3.0.6 
+bundle install
 
 
 rake:   ruby make
