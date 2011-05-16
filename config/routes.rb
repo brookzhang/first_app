@@ -1,6 +1,9 @@
 FirstApp::Application.routes.draw do
+<<<<<<< HEAD
   resources :microposts
 
+=======
+>>>>>>> origin/master
   resources :users
 
   # The priority is based upon order of creation:

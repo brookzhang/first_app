@@ -1,1 +1,2 @@
-my first app on reading ror tutorial
+my first app on reading ror tutorial ,
+from ubunto to windows.

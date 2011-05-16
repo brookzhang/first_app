@@ -10,6 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20110516134308) do
 
   create_table "microposts", :force => true do |t|
@@ -18,6 +19,9 @@ ActiveRecord::Schema.define(:version => 20110516134308) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+=======
+ActiveRecord::Schema.define(:version => 20110516023327) do
+>>>>>>> origin/master
 
   create_table "users", :force => true do |t|
     t.string   "name"
