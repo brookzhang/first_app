@@ -5,7 +5,7 @@
 * gem install rails --version 3.0.6 
 * bundle install
 * gem install rails
-* rails console
+* rails console  #quit
 
 * ======================================================
 * ======rake:   ruby make
@@ -74,5 +74,5 @@
 * rm rf   #remove recursive force
 * ps -e | grep apt      #show apt* process
 * sudo killall apt     #kill process
-* sudo killall #apt-get
+* sudo killall apt-get
 
