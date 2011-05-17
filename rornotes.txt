@@ -57,7 +57,7 @@ $ sudo gem install heroku
 $ heroku keys:add
 $ heroku create
 $ heroku rake db:migrate
- [sudo] gem install taps
+$ [sudo] gem install taps
 $ heroku db:push	#push data to heroku
 
 
