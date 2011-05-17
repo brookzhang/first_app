@@ -3,13 +3,17 @@ $ rails new
 $ rails new sample_app -T		#without testing code
 $ rails server    rails s
 $ rails generate scaffold User name:string email:string
-$ gem install rails --version 3.0.6 
-$ bundle install
-$ gem install rails
 $ rails console  #quit
+$ bundle install		#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
+$ gem install rails		# -p --http-proxy http://172.30.4.63:3128
+$ gem install rails --version 3.0.6		
+$ rails generate rspec:install
+
 
 $ ============================rake:   ruby make============================
 $ rake db:migrate
+
+
 
 $ ============================git:============================
 $ git config --global user.name "name"
@@ -17,8 +21,9 @@ $ git config --global user.email "mail"
 $ git config --global http.proxy http://*.*.*.*:3128
 $ git config --global alias.co checkout
 $ git config --global co.editor "vim -f"
-$ git-config core.autocrlf false
-
+$ git config --global core.autocrlf false
+$ git config --global github.user username		#connected with https 
+$ git config --global github.token tokencode	#https security code
 $ git init        init repository for a new folder
 $ git checkout -b modify-readme       new branch
 $ git status
@@ -33,17 +38,18 @@ $ git mv README README.markdown   rename file
 $ git log
 
 
+
 $ ============================github:============================
 $ git push
+$ git push origin master:master
 $ git clone git@github.com:brookzhang/first_app.git       will create a new folder as /first_app
 $ git clone https://brookzhang@github.com/brookzhang/first_app.git
-$ git config --global github.user username
-$ git config --global github.token tokencode
 $ git pull
 $ git fetch
 $ git push heroku master
 $ git remote rm heroku
 $ git remote add heroku git@heroku.com:brook.git
+
 
 
 $ ============================heroku:============================
@@ -55,10 +61,12 @@ $ heroku rake db:migrate
 $ heroku db:push	#push data to heroku
 
 
+
 $ ============================vim:============================
 $ :w  #write = save
 $ :q  #quit
 $ d   #delete
+
 
 
 $ ============================ubuntu:============================
