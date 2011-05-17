@@ -1,78 +1,74 @@
-* ======rails:
-* rails new
-* rails server    rails s
-* rails generate scaffold User name:string email:string
-* gem install rails --version 3.0.6 
-* bundle install
-* gem install rails
-* rails console  #quit
+$ ============================rails:============================
+$ rails new
+$ rails new sample_app -T		#without testing code
+$ rails server    rails s
+$ rails generate scaffold User name:string email:string
+$ gem install rails --version 3.0.6 
+$ bundle install
+$ gem install rails
+$ rails console  #quit
 
-* ======================================================
-* ======rake:   ruby make
-* rake db:migrate
+$ ============================rake:   ruby make============================
+$ rake db:migrate
 
-* ======================================================
-* ======git:
-* git config --global user.name "name"
-* git config --global user.email "mail"
-* git config --global http.proxy http://*.*.*.*:3128
-* git config --global alias.co checkout
-* git config --global co.editor "vim -f"
-* git init        init a new folder
+$ ============================git:============================
+$ git config --global user.name "name"
+$ git config --global user.email "mail"
+$ git config --global http.proxy http://*.*.*.*:3128
+$ git config --global alias.co checkout
+$ git config --global co.editor "vim -f"
+$ git-config core.autocrlf false
 
-
-* ======================================================
-* ====== checkout master    git co
-* git checkout -b modify-readme       new branch
-* git status
-* git branch
-* git branch -d modify-readme
-* git branch -D modify-readme     delte branch even though we haven't merged in the changes
-* git merge modify-readme
-* git commit -m "message"         commit modified one file 
-* git commit -a -m "message"      commit all modified files ,not include new files
-* git add .                       add all include new file
-* git mv README README.markdown   rename file
-* git log
+$ git init        init repository for a new folder
+$ git checkout -b modify-readme       new branch
+$ git status
+$ git branch
+$ git branch -d modify-readme
+$ git branch -D modify-readme     delte branch even though we haven't merged in the changes
+$ git merge modify-readme
+$ git commit -m "message"         commit modified one file 
+$ git commit -a -m "message"      commit all modified files ,not include new files
+$ git add .                       add all include new file
+$ git mv README README.markdown   rename file
+$ git log
 
 
-* ======================================================
-* ======github:
-* git push
-* git clone git@github.com:brookzhang/first_app.git       will create a new folder as /first_app
-* git clone https://brookzhang@github.com/brookzhang/first_app.git
-* git config --global github.user username
-* git config --global github.token tokencode
-
-* ======================================================
-* ======git pull
-* git push heroku master
-* git remote rm heroku
-* git remote add heroku git@heroku.com:brook.git
-
-* ======================================================
-* ======heroku:
-* sudo gem install heroku
-* heroku keys:add
-* heroku create
+$ ============================github:============================
+$ git push
+$ git clone git@github.com:brookzhang/first_app.git       will create a new folder as /first_app
+$ git clone https://brookzhang@github.com/brookzhang/first_app.git
+$ git config --global github.user username
+$ git config --global github.token tokencode
+$ git pull
+$ git fetch
+$ git push heroku master
+$ git remote rm heroku
+$ git remote add heroku git@heroku.com:brook.git
 
 
-* ======================================================
-* ======vim:
-* :w  #write = save
-* :q  #quit
-* d   #delete
+$ ============================heroku:============================
+$ sudo gem install heroku
+$ heroku keys:add
+$ heroku create
+$ heroku rake db:migrate
+ [sudo] gem install taps
+$ heroku db:push	#push data to heroku
 
 
-* ======================================================
-* ======ubuntu:
-* cd  #change directory
-* ls  #list
-* mv  #move
-* cp #copy
-* rm  #remove file or directory
-* rm rf   #remove recursive force
-* ps -e | grep apt      #show apt* process
-* sudo killall apt     #kill process
-* sudo killall apt-get
+$ ============================vim:============================
+$ :w  #write = save
+$ :q  #quit
+$ d   #delete
+
+
+$ ============================ubuntu:============================
+$ cd  #change directory
+$ ls  #list
+$ mv  #move
+$ cp #copy
+$ rm  #remove file or directory
+$ rm rf   #remove recursive force
+$ ps -e | grep apt      #show apt* process
+$ sudo killall apt     #kill process
+$ sudo killall apt-get
 
