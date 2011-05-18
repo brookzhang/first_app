@@ -7,13 +7,13 @@ $ rails console  #quit
 $ bundle install								#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
 $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
+$ gem install win32console
 $ rails generate rspec:install
 $ rails generate controller Pages home contact
 $ [sudo] gem install autotest -v 4.3.2
 $ [sudo] gem install autotest-rails-pure -v 4.1.0
-
-
-
+$ sudo gem install autotest-standalone
+$ sudo gem install autotest-growl -p --http-proxy http://172.30.4.63:3128
 
 
 $ ============================rake:   ruby make============================
@@ -58,6 +58,13 @@ $ git fetch
 $ git push heroku master
 $ git remote rm heroku
 $ git remote add heroku git@heroku.com:brook.git
+
+
+
+$ ============================rspec:============================
+$ rspec spec/
+$ bundle exec rspec spec/
+$ time rspec spec/
 
 
 
