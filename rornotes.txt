@@ -1,14 +1,15 @@
 $ ============================rails:============================87
 $ rails new
 $ rails new sample_app -T						#without testing code
-$ rails server    #rails s
+$ rails server									#rails s
 $ rails generate scaffold User name:string email:string
-$ rails console  #quit
+$ rails console									# rails c  ,quit,ctrl+c,ctrl+d
 $ bundle install								#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
 $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
 $ gem install win32console
 $ rails generate rspec:install
+$ rails generate integration_test layout_links
 $ rails generate controller Pages home contact
 $ [sudo] gem install autotest -v 4.3.2
 $ [sudo] gem install autotest-rails-pure -v 4.1.0
@@ -43,7 +44,8 @@ $ git commit -am "message"						#short write
 $ git add .                                     #add all include new file
 $ git mv README README.markdown                 #rename file
 $ git log
-
+$ git checkout master + git merge static-pages	#merge branch to master
+$ git rm public/index.html						#tell git that a file should be removed
 
 
 $ ============================github:============================
