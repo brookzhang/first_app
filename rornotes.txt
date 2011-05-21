@@ -15,6 +15,8 @@ $ [sudo] gem install autotest -v 4.3.2
 $ [sudo] gem install autotest-rails-pure -v 4.1.0
 $ sudo gem install autotest-standalone
 $ sudo gem install autotest-growl -p --http-proxy http://172.30.4.63:3128
+$ sudo gem install webrat						#need nokogiri
+$ sudo apt-get install libxslt-dev libxml2-dev	#nokogiri install error on  'libxml2 is missing'
 
 
 $ ============================rake:   ruby make============================
@@ -93,7 +95,8 @@ $ ls                                            #list
 $ mv                                            #move
 $ cp                                            #copy
 $ rm                                            #remove file or directory
-$ rm rf											#remove recursive force
+$ rm rf											                    #remove recursive force
+$ rm -rf spec/views
 $ ps -e | grep apt                              #show apt* process
 $ sudo killall apt                              #kill process
 $ sudo killall apt-get
