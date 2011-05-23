@@ -11,7 +11,7 @@ describe UsersController do
     
     it "should have right title" do
       get 'new'
-      response.should have_selector('title',:content=>"sign up")
+      response.should have_selector('title',:content=>"rortutorial | Sign up")
     end
   end
 	

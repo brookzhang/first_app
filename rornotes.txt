@@ -4,10 +4,12 @@ $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
 $ rails generate scaffold User name:string email:string
 $ rails console									# rails c  ,quit,ctrl+c,ctrl+d
+$ rails console --sandbox						#no changes
 $ bundle install								#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
 $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
 $ gem install win32console
+$ gem install annotate-model					#add comments for models
 $ rails generate rspec:install
 $ rails generate integration_test layout_links
 $ rails generate controller Pages home contact
@@ -17,10 +19,12 @@ $ sudo gem install autotest-standalone
 $ sudo gem install autotest-growl -p --http-proxy http://172.30.4.63:3128
 $ sudo gem install webrat						#need nokogiri
 $ sudo apt-get install libxslt-dev libxml2-dev	#nokogiri install error on  'libxml2 is missing'
+$ tail -f log/development.log					#show database log
 
 
 $ ============================rake:   ruby make============================
 $ rake db:migrate
+$ rake db:test:prepare
 
 
 
@@ -102,7 +106,8 @@ $ sudo killall apt                              #kill process
 $ sudo killall apt-get
 
 
-
+$ ============================windows:============================
+$ cmd color : http://adoxa.110mb.com/ansicon/ansi140.zip  , copy to c:/windows/system32/ ,exec ansicon.exe -i
 
 
 Chapter 1 From Zero to Deploy					1
