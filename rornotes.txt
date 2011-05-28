@@ -2,9 +2,11 @@ $ ============================rails:============================87
 $ rails new
 $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
+$ rails server --environment production
 $ rails generate scaffold User name:string email:string
 $ rails console									# rails c  ,quit,ctrl+c,ctrl+d
 $ rails console --sandbox						#no changes
+$ rails console test
 $ bundle install								#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
 $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
@@ -24,6 +26,7 @@ $ tail -f log/development.log					#show database log
 
 $ ============================rake:   ruby make============================
 $ rake db:migrate
+$ rake db:migrate RAILS_ENV=production
 $ rake db:test:prepare
 
 
@@ -73,6 +76,7 @@ $ ============================rspec:============================
 $ rspec spec/
 $ bundle exec rspec spec/
 $ time rspec spec/
+$ rspec spec/models/user_spec.rb -e "should have an encrypted password attribute"
 
 
 
@@ -83,7 +87,7 @@ $ heroku create
 $ heroku rake db:migrate
 $ [sudo] gem install taps
 $ heroku db:push								#push data to heroku
-
+$ heroku console
 
 
 $ ============================vim:============================
