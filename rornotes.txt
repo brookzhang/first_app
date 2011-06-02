@@ -7,7 +7,7 @@ $ rails generate scaffold User name:string email:string
 $ rails console									# rails c  ,quit,ctrl+c,ctrl+d
 $ rails console --sandbox						#no changes
 $ rails console test
-$ bundle install								#set proxy=http://172.30.4.63:3128  #set HTTP_PROXY=http://172.30.4.63:3128
+$ bundle install								#set HTTP_PROXY=http://172.30.4.63:3128		#set proxy=http://172.30.4.63:3128  
 $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
 $ gem install win32console
@@ -22,12 +22,15 @@ $ sudo gem install autotest-growl -p --http-proxy http://172.30.4.63:3128
 $ sudo gem install webrat						#need nokogiri
 $ sudo apt-get install libxslt-dev libxml2-dev	#nokogiri install error on  'libxml2 is missing'
 $ tail -f log/development.log					#show database log
+$ gem install factory_girl_rails				
+$ gem install gravatar_image_tag
 
 
 $ ============================rake:   ruby make============================
 $ rake db:migrate
 $ rake db:migrate RAILS_ENV=production
 $ rake db:test:prepare
+$ rake db:reset									#clear database
 
 
 
@@ -77,6 +80,8 @@ $ rspec spec/
 $ bundle exec rspec spec/
 $ time rspec spec/
 $ rspec spec/models/user_spec.rb -e "should have an encrypted password attribute"
+
+
 
 
 
