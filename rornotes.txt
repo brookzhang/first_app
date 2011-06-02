@@ -58,6 +58,7 @@ $ git mv README README.markdown                 #rename file
 $ git log
 $ git checkout master + git merge static-pages	#merge branch to master
 $ git rm public/index.html						#tell git that a file should be removed
+$ git add . / git commit -am "massage" / git checkout master / git merge other-branch / git push # merge a branch
 
 
 $ ============================github:============================
