@@ -1,4 +1,4 @@
-$ ============================rails:============================87
+$ ============================rails:============================310
 $ rails new
 $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
@@ -47,8 +47,7 @@ $ git init										#init repository for a new folder
 $ git checkout -b modify-readme					#new branch
 $ git status
 $ git branch
-$ git branch -d modify-readme
-$ git branch -D modify-readme                   #delte branch even though we haven't merged in the changes
+$ git branch -d some-branch  / git branch -D modify-readme  #delte branch,-d needs merged all changes ,-D not care about changes.
 $ git merge modify-readme		  
 $ git commit -m "message"                       #commit modified one file 
 $ git commit -a -m "message"                    #commit all changes ,not include new files ,with message
@@ -56,9 +55,9 @@ $ git commit -am "message"						#short write
 $ git add .                                     #add all include new file
 $ git mv README README.markdown                 #rename file
 $ git log
-$ git checkout master + git merge static-pages	#merge branch to master
 $ git rm public/index.html						#tell git that a file should be removed
 $ git add . / git commit -am "massage" / git checkout master / git merge other-branch / git push # merge a branch
+$ git checkout master / git checkout -b new-branch      #make a new branch, and leave on new-branch
 
 
 $ ============================github:============================
@@ -93,7 +92,7 @@ $ heroku create
 $ heroku rake db:migrate
 $ [sudo] gem install taps
 $ heroku db:push								#push data to heroku
-$ heroku console
+$ heroku console                #same as rails console on heroku
 
 
 $ ============================vim:============================
