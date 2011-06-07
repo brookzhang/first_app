@@ -1,4 +1,4 @@
-$ ============================rails:============================310
+$ ============================rails:============================337
 $ rails new
 $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
@@ -12,8 +12,6 @@ $ gem install rails								# -p --http-proxy http://172.30.4.63:3128
 $ gem install rails --version 3.0.6		
 $ gem install win32console
 $ gem install annotate-model					#add comments for models
-$ rails generate rspec:install
-$ rails generate integration_test layout_links
 $ rails generate controller Pages home contact
 $ [sudo] gem install autotest -v 4.3.2
 $ [sudo] gem install autotest-rails-pure -v 4.1.0
@@ -76,6 +74,8 @@ $ git remote add heroku git@heroku.com:brook.git
 
 
 $ ============================rspec:============================
+$ rails generate rspec:install
+$ rails generate integration_test layout_links
 $ rspec spec/
 $ bundle exec rspec spec/
 $ time rspec spec/
