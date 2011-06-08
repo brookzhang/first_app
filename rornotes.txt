@@ -118,6 +118,11 @@ $ sudo killall apt-get
 $ ============================windows:============================
 $ cmd color : http://adoxa.110mb.com/ansicon/ansi140.zip  , copy to c:/windows/system32/ ,exec ansicon.exe -i
 
+$ ============================words:============================
+the tail wagging the dog
+There are 10 kinds of people in the world...
+
+
 
 Chapter 1 From Zero to Deploy					1
 1.1 Introduction								3
@@ -183,3 +188,5 @@ Chapter 12 Following Users 						461
 12.1 The Relationship Model 					463
 12.2 A Web Interface for Following and Followers 482
 12.3 The Status Feed 							507
+
+
