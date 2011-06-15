@@ -22,6 +22,8 @@ $ sudo apt-get install libxslt-dev libxml2-dev	#nokogiri install error on  'libx
 $ tail -f log/development.log					#show database log
 $ gem install factory_girl_rails				
 $ gem install gravatar_image_tag
+$ gem install faker -v 0.9.5
+$ gem install will_paginate -v 3.0.pre2
 
 
 $ ============================rake:   ruby make============================
