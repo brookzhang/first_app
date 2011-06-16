@@ -31,6 +31,7 @@ $ rake db:migrate
 $ rake db:migrate RAILS_ENV=production
 $ rake db:test:prepare
 $ rake db:reset									#clear database
+$ rake db:populate              # lib/tasks/sample_data.rake task :populate =>:environment 
 
 
 
