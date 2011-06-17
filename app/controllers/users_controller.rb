@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_filter :authenticate , :only=>[:edit , :update , :index]
   before_filter :correct_user , :only=>[:edit , :update]
   before_filter :admin_user , :only=>:destroy
+  before_filter :unlogged_in_user , :only=>[:new,:create]
   
   def index
     @title = "All users"
@@ -11,6 +12,7 @@ class UsersController < ApplicationController
   def new
     @user=User.new
     @title="Sign up"
+    @action_title = "Sign up"
   end
 
   def show
@@ -32,6 +34,7 @@ class UsersController < ApplicationController
   
   def edit
     @title = "Edit user"
+    @action_title = "Update"
   end
   
   def update
@@ -65,5 +68,11 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_path) unless current_user.admin?
   end
+  
+  def unlogged_in_user
+    flash[:error] = "You have signed up."
+    redirect_to(root_path) unless !signed_in?
+  end
+    
   
 end
