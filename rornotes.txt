@@ -1,4 +1,4 @@
-$ ============================rails:============================426
+$ ============================rails:============================434
 $ rails new
 $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
@@ -24,6 +24,7 @@ $ gem install factory_girl_rails
 $ gem install gravatar_image_tag
 $ gem install faker -v 0.9.5
 $ gem install will_paginate -v 3.0.pre2
+
 
 
 $ ============================rake:   ruby make============================
@@ -124,6 +125,12 @@ $ cmd color : http://adoxa.110mb.com/ansicon/ansi140.zip  , copy to c:/windows/s
 $ ============================words:============================
 the tail wagging the dog
 There are 10 kinds of people in the world...
+
+
+
+$ ===============================================================
+@user=User.find(1) 
+@user.toggle!(:admin)   #set admin
 
 
 
