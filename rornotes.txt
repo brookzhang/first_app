@@ -1,4 +1,4 @@
-$ ============================rails:============================434
+$ ============================rails:============================469
 $ rails new
 $ rails new sample_app -T						#without testing code
 $ rails server									#rails s
